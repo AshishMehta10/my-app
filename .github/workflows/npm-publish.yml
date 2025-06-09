@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/your-image-name:latest
+          tags: docker push ashishmehta10/my-app:latest
