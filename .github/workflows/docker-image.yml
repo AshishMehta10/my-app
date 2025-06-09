@@ -3,7 +3,13 @@ name: Docker Image CI
 on:
   push:
     branches: [ "gamechanger111" ]
-  
+    # This will trigger for any file change, including README
+    paths:
+      - '**'
+  pull_request:
+    branches: [ "gamechanger111" ]
+  workflow_dispatch:
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -27,5 +33,3 @@ jobs:
           context: .
           push: true
           tags: ashishmehta10/my-app
-
-
