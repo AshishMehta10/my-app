@@ -2,12 +2,12 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "gamechanger111" ]
+    branches: [ "**" ]
     # This will trigger for any file change, including README
     paths:
       - '**'
   pull_request:
-    branches: [ "gamechanger111" ]
+    branches: [ "**" ]
   workflow_dispatch:
 
 jobs:
